@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VWeisz Synergy Incorporated</title>
+    
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gold: #D4AF37;
+            --light-gold: #F4E8C1;
+            --bg-gold-tint: #FAF7EE;
+            --dark-slate: #2C302E;
+            --muted-grey: #6C757D;
+            --text-color: #333333;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color);
+            background-image: url('https://www.shutterstock.com/shutterstock/videos/3991648403/thumb/1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Navbar Customization */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 10px 0;
+            transition: all 0.3s ease;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--dark-slate) !important;
+            white-space: normal;
+        }
+        
+        /* Logo Styling */
+        .navbar-logo {
+            max-height: 45px; /* Adjust height seamlessly for mobile/desktop */
+            width: auto;
+            object-fit: contain;
+        }
+        
+        /* Optional Text Logo Styling (if image isn't used) */
+        .brand-text {
+            font-size: 0.9rem;
+            line-height: 1.2;
+        }
+        @media (min-width: 576px) {
+            .brand-text {
+                font-size: 1.1rem;
+            }
+        }
+        .brand-text span {
+            color: var(--primary-gold);
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--dark-slate) !important;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-gold) !important;
+        }
+
+        /* Hero Header Section */
+        .contact-hero {
+            background: linear-gradient(135deg, rgba(250, 247, 238, 0.92) 0%, rgba(255, 255, 255, 0.88) 100%);
+            backdrop-filter: blur(5px);
+            padding: 60px 0;
+            border-bottom: 3px solid var(--light-gold);
+        }
+        @media (min-width: 768px) {
+            .contact-hero {
+                padding: 100px 0 60px 0;
+            }
+        }
+        .contact-hero h1 {
+            font-weight: 700;
+            color: var(--dark-slate);
+        }
+        .contact-hero p {
+            color: var(--muted-grey);
+            max-width: 600px;
+        }
+
+        /* Contact Details Cards */
+        .info-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 8px;
+            padding: 30px 20px;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .info-card {
+                padding: 35px 25px;
+            }
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-gold);
+            background: rgba(255, 255, 255, 0.98);
+        }
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            background-color: var(--bg-gold-tint);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--primary-gold);
+            font-size: 1.4rem;
+            border: 1px solid var(--light-gold);
+        }
+        .info-card h5 {
+            font-weight: 600;
+            color: var(--dark-slate);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+        .info-card p, .info-card a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .info-card a:hover {
+            color: var(--primary-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="VWEISZ SYNERGY INCORPORATED" class="navbar-logo me-2">
+                
+                <span class="brand-text"><span>VWEISZ SYNERGY INCORPORATED</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto pt-3 pt-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="container text-center">
+            <h1 class="display-6 display-md-5 mb-3">Connect With Us</h1>
+            <p class="lead fs-6 fs-md-5 mx-auto px-2">Want to know more about us? Feel free to reach out to our team through any of the channels below.</p>
+        </div>
+    </section>
+
+    <section class="py-4 py-md-5 my-3 my-md-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="info-card shadow-sm">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h5>Our Location</h5>
+                        <p class="mb-0">
+                            13b Sapphire St., DBP Farm Road,<br>
+                            Pulang Lupa Dos, Las Piñas City,<br>
+                            Philippines
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="info-card shadow-sm">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h5>Email Communications</h5>
+                        <p class="mb-0 text-break w-100">
+                            <a href="mailto:info@vweisz.com">info@vweisz.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="info-card shadow-sm">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h5>Call Details</h5>
+                        <p class="mb-1 text-break w-100"><a href="tel:+63288291724">+632 88291724</a></p>
+                        <p class="mb-0 text-break w-100"><a href="tel:+63253046500">+632 53046500</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
