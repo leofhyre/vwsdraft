@@ -3,235 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VWeisz Synergy Incorporated</title>
-    
-    <link rel="icon" type="image/x-icon" href="logo.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary-gold: #D4AF37;
-            --light-gold: #F4E8C1;
-            --bg-gold-tint: #FAF7EE;
-            --dark-slate: #2C302E;
-            --muted-grey: #6C757D;
-            --text-color: #333333;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: var(--text-color);
-            background-image: url('https://www.shutterstock.com/shutterstock/videos/3991648403/thumb/1.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            overflow-x: hidden;
-            min-height: 100vh;
-        }
-
-        /* Navbar Customization */
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(5px);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            padding: 10px 0;
-            transition: all 0.3s ease;
-        }
-        .navbar-brand {
-            display: flex;
-            align-items: center;
-            font-weight: 700;
-            letter-spacing: 1px;
-            color: var(--dark-slate) !important;
-            white-space: normal;
-        }
-        
-        /* Logo Styling */
-        .navbar-logo {
-            max-height: 45px; /* Adjust height seamlessly for mobile/desktop */
-            width: auto;
-            object-fit: contain;
-        }
-        
-        /* Optional Text Logo Styling (if image isn't used) */
-        .brand-text {
-            font-size: 0.9rem;
-            line-height: 1.2;
-        }
-        @media (min-width: 576px) {
-            .brand-text {
-                font-size: 1.1rem;
-            }
-        }
-        .brand-text span {
-            color: var(--primary-gold);
-        }
-
-        .nav-link {
-            font-weight: 500;
-            color: var(--dark-slate) !important;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-        .nav-link:hover, .nav-link.active {
-            color: var(--primary-gold) !important;
-        }
-
-        /* Hero Header Section */
-        .contact-hero {
-            background: linear-gradient(135deg, rgba(250, 247, 238, 0.92) 0%, rgba(255, 255, 255, 0.88) 100%);
-            backdrop-filter: blur(5px);
-            padding: 60px 0;
-            border-bottom: 3px solid var(--light-gold);
-        }
-        @media (min-width: 768px) {
-            .contact-hero {
-                padding: 100px 0 60px 0;
-            }
-        }
-        .contact-hero h1 {
-            font-weight: 700;
-            color: var(--dark-slate);
-        }
-        .contact-hero p {
-            color: var(--muted-grey);
-            max-width: 600px;
-        }
-
-        /* Contact Details Cards */
-        .info-card {
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 8px;
-            padding: 30px 20px;
-            height: 100%;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        @media (min-width: 768px) {
-            .info-card {
-                padding: 35px 25px;
-            }
-        }
-        .info-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            border-color: var(--primary-gold);
-            background: rgba(255, 255, 255, 0.98);
-        }
-        .icon-box {
-            width: 60px;
-            height: 60px;
-            background-color: var(--bg-gold-tint);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            color: var(--primary-gold);
-            font-size: 1.4rem;
-            border: 1px solid var(--light-gold);
-        }
-        .info-card h5 {
-            font-weight: 600;
-            color: var(--dark-slate);
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            font-size: 0.95rem;
-            letter-spacing: 1px;
-        }
-        .info-card p, .info-card a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
-        .info-card a:hover {
-            color: var(--primary-gold);
-        }
-    </style>
+    <title>Siegranz Chemworks Corporation | Corporate Ecosystem</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="VWEISZ SYNERGY INCORPORATED" class="navbar-logo me-2">
-                
-                <span class="brand-text"><span>VWEISZ SYNERGY INCORPORATED</span></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="logo.jpg" alt="Vweisz" class="logo-img">
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuToggle" aria-label="Toggle navigationMenu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto pt-3 pt-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#">Contact Us</a></li>
+            <nav id="navMenu">
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#companies">Our Companies</a></li>
+                    <li><a href="#products">Our Products</a></li>
+                    <li><a href="#certifications">Compliance</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(rgba(43, 37, 21, 0.8), rgba(71, 62, 36, 0.8)), url('hero-bg.jpg') no-repeat center center/cover;">
+        <div class="hero-content">
+            <h1>Product Innovations for your Company.</h1>
+            <p>A trusted manufacturer specializing in Personal Care, Cosmetics, and Household Hazardous products since 1999.</p>
+            <a href="#companies" class="btn-hero">View Our Ecosystem</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container grid-2">
+            <div class="about-text">
+                <span class="subheading">Something About Us</span>
+                <h2>Over 22 Years of Manufacturing Excellence</h2>
+                <p>Siegranz Chemworks Corporation is a Personal Care, Cosmetics, and Household Hazardous Products manufacturer that established its operations in 1999. The company has over 22 years of experience and has multiple compliance certifications catering to both Small and Medium Enterprises as well as Multinational Corporations.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>1999</h3>
+                    <p>Established</p>
+                </div>
+                <div class="stat-card">
+                    <h3>22+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h3>ASEAN</h3>
+                    <p>GMP Compliant</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="text-center-wrapper">
+                <span class="subheading">Our Capabilities</span>
+                <h2>Manufacturing & Development Services</h2>
+                <p class="section-desc">We offer turnkey institutional solutions supporting your product line from laboratory concept to mass retail packaging.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🧪</div>
+                    <h3>Custom Formulation & R&D</h3>
+                    <p>Our dedicated laboratory team designs high-performance chemical blends customized to your brand specs. We refine stability, sensory properties, and active profile properties.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏭</div>
+                    <h3>Contract Manufacturing (OEM/ODM)</h3>
+                    <p>Full-scale compounding solutions utilizing modern processing machinery. We handle mixing, heating, emulsification, and handling across diverse physical product viscosities.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Toll Packing & Filling</h3>
+                    <p>High-speed automated filling lines optimized for tubes, bottles, jars, and sachets. Strict alignment with exact volumetric parameters and atmospheric seal testing rules.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Regulatory & FDA Registration</h3>
+                    <p>Streamlined documentary assistance for Notification of Cosmetics and Household Hazardous clearances, easing market readiness requirements for distribution setups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="companies" class="companies-section">
+        <div class="container">
+            <div class="text-center-wrapper">
+                <span class="subheading">Corporate Structure</span>
+                <h2>The Siegranz Ecosystem</h2>
+                <p class="section-desc">A unified group of specialized entities delivering vertical integration across formulation, manufacturing, testing, and brand distribution.</p>
+            </div>
+
+            <div class="companies-grid">
+                <div class="company-card">
+                    <div class="company-badge">Core Manufacturing</div>
+                    <h3>Siegranz Chemworks Corp.</h3>
+                    <p class="company-role">Central production facility handling industrial compounding, toll filling, and OEM/ODM operations for local and multinational cosmetic and household brands.</p>
+                    <ul class="company-features">
+                        <li>FDA Licensed To Operate (LTO)</li>
+                        <li>ASEAN GMP Compliant Standards</li>
+                        <li>High-capacity automated processing lines</li>
+                    </ul>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-badge">Distribution & Logistics</div>
+                    <h3>Siegranz Marketing</h3>
+                    <p class="company-role">The trading and logistical supply arm managing raw chemical material imports, specialized packaging sourcing, and domestic retail supply chains.</p>
+                    <ul class="company-features">
+                        <li>Global ingredient sourcing networks</li>
+                        <li>Bulk inventory logistics management</li>
+                        <li>Just-In-Time client delivery frameworks</li>
+                    </ul>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-badge">Clinical & Safety testing</div>
+                    <h3>AviChemLabs Inc.</h3>
+                    <p class="company-role">An independent testing and quality assurance laboratory executing micro-testing, accelerated stability trials, and analytical chemical verification services.</p>
+                    <ul class="company-features">
+                        <li>Independent third-party audits</li>
+                        <li>Preservative efficacy testing (PET)</li>
+                        <li>Heavy metal and contaminant analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="personal">Personal Care</button>
+                    <button class="filter-btn" data-filter="cosmetics">Color Cosmetics</button>
+                    <button class="filter-btn" data-filter="household">Household Hazardous</button>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card" data-category="personal">
+                    <div class="product-img-placeholder">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5z"/>
+                            <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
+                            <path d="M12 18v4M8 22h8"/>
+                        </svg>
+                        <span>Premium Hair Care</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Personal Care</span>
+                        <h3>Shampoos & Serums</h3>
+                        <p>Custom shampoos, conditioners, and serums formulated for scalable market distributions.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-img-placeholder">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M6 3h12v3H6zM9 6v15h6V6"/>
+                        </svg>
+                        <span>Color Cosmetics</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Color Cosmetics</span>
+                        <h3>Matte Liquid Lipsticks</h3>
+                        <p>Vibrant pigment formulations, smooth textures, and long-lasting wearable cosmetics.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="cosmetics">
+                    <div class="product-img-placeholder">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="4"/>
+                        </svg>
+                        <span>Base Foundations</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Color Cosmetics</span>
+                        <h3>Liquid Complexion Bases</h3>
+                        <p>Lightweight skin tints and full-coverage base makeups built with SPF benefits.</p>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="household">
+                    <div class="product-img-placeholder">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M7 22V11H3V6l5-4h8l5 4v5h-4v11H7z"/>
+                        </svg>
+                        <span>Household Cleaners</span>
+                    </div>
+                    <div class="product-info">
+                        <span class="category-tag">Household Hazardous</span>
+                        <h3>Cleaners & Detergents</h3>
+                        <p>High-standard formulation of household sanitation and washing materials.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="cert-section">
+        <div class="container text-center">
+            <h2>Certifications & Market Standards</h2>
+            <p class="section-desc">Operating with high scalable standards to back up multinational supply chains.</p>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <h4>ISO 22716</h4>
+                    <p>International Cosmetic GMP Standard</p>
+                </div>
+                <div class="cert-item">
+                    <h4>FDA LTO</h4>
+                    <p>Duly Licensed Philippine FDA Facility</p>
+                </div>
+                <div class="cert-item">
+                    <h4>OEM / ODM Support</h4>
+                    <p>End-to-End Formulation and Custom Packaging</p>
+                </div>
+		<div class="cert-item">
+                    <h4>Additional Certificate</h4>
+                    <p>Addons</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container grid-2">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Ready to bring your product innovation to life? Contact our laboratory operations team today.</p>
+                <ul class="contact-details">
+                    <li><strong>Address:</strong> 15 Sapphire St., DBP Farm Subdivision, Pulang Lupa II, Las Piñas City, Metro Manila, Philippines</li>
+                    <li><strong>Email:</strong> info@siegranz.com</li>
+                    <li><strong>Phone:</strong> +63 (2) 825-0290</li>
                 </ul>
             </div>
-        </div>
-    </nav>
-
-    <section class="contact-hero">
-        <div class="container text-center">
-            <h1 class="display-6 display-md-5 mb-3">Connect With Us</h1>
-            <p class="lead fs-6 fs-md-5 mx-auto px-2">Want to know more about us? Feel free to reach out to our team through any of the channels below.</p>
-        </div>
-    </section>
-
-    <section class="py-4 py-md-5 my-3 my-md-5">
-        <div class="container">
-            <div class="row g-4 justify-content-center">
-                
-                <div class="col-sm-10 col-md-6 col-lg-4">
-                    <div class="info-card shadow-sm">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <h5>Our Location</h5>
-                        <p class="mb-0">
-                            13b Sapphire St., DBP Farm Road,<br>
-                            Pulang Lupa Dos, Las Piñas City,<br>
-                            Philippines
-                        </p>
+            <div class="contact-form-wrapper">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Company / Full Name</label>
+                        <input type="text" id="name" required>
                     </div>
-                </div>
-
-                <div class="col-sm-10 col-md-6 col-lg-4">
-                    <div class="info-card shadow-sm">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <h5>Email Communications</h5>
-                        <p class="mb-0 text-break w-100">
-                            <a href="mailto:info@vweisz.com">info@vweisz.com</a>
-                        </p>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
                     </div>
-                </div>
-
-                <div class="col-sm-10 col-md-6 col-lg-4">
-                    <div class="info-card shadow-sm">
-                        <div class="icon-box">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <h5>Call Details</h5>
-                        <p class="mb-1 text-break w-100"><a href="tel:+63288291724">+632 88291724</a></p>
-                        <p class="mb-0 text-break w-100"><a href="tel:+63253046500">+632 53046500</a></p>
+                    <div class="form-group">
+                        <label for="message">Inquiry Details</label>
+                        <textarea id="message" rows="5" required></textarea>
                     </div>
-                </div>
-
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+                <div id="formFeedback" class="hidden">Thank you! Your message has been sent successfully.</div>
             </div>
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Siegranz Chemworks Corporation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
